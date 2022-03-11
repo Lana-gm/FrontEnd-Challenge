@@ -26,7 +26,6 @@ export const Container = styled(S.Container)`
     background-repeat: no-repeat;
     background-position-x: center;
     z-index: -1;
-    backdrop-filter: blur(5px);
   }
 `;
 
@@ -41,12 +40,24 @@ export const Card = styled.li`
   background: ${theme.colors.white.primary};
   box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.32);
   border-radius: 4px;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 288px;
+    height: 970px;
+  }
 `;
 
 export const Image = styled.img`
   width: 349px;
   height: 513px;
   filter: drop-shadow(0px 12px 18px rgba(0, 0, 0, 0.3));
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 240px;
+    height: 351px;
+  }
 `;
 
 export const Details = styled.div`

@@ -16,7 +16,7 @@ export const CardItem = styled.li`
 
   min-height: 160px;
   min-width: 272px;
-  margin: 0 0 16px 16px;
+  margin: 0 16px 16px 0;
 
   background: ${theme.colors.white.primary};
   box-shadow: 0px 6px 24px rgba(84, 16, 95, 0.13);

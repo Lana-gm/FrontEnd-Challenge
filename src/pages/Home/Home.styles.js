@@ -26,6 +26,7 @@ export const Container = styled(S.Container)`
 
     @media (max-width: 800px) {
       background-image: url(${backgroundHomePhone});
+      position: fixed;
     }
   }
 `;
